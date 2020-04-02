@@ -1,0 +1,30 @@
+/*regole generiche-------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*regole main---------------------------------------*/
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.slider{
+  width: 80%;
+  height: 80%;
+}
+.slider img{
+  height: 80vh;
+  width: 100%;
+  display: none;
+}
+.slider img.active{
+  display: inline-block;
+}
+.pallini{
+  position:absolute;
+  bottom: 20px;
+  left: 49%;
+}
