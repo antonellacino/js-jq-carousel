@@ -8,7 +8,9 @@ $(document).ready(function(){
   $('.prev').click(
     prevImg  //richiamo la funzione
   );
-
+  $('.pallini i').click(
+    palliniImg
+  );
   //function next
   function nextImg() {
     //catturo in una variabile l'elemento che in quel momento ha la classe active idem x i pallini
@@ -44,6 +46,17 @@ $(document).ready(function(){
     imgActive.prev().addClass('active');
     ballActive.prev().addClass('active');
     }
+  };
+
+  function palliniImg(){
+    //catturo l'indice che ho inserito dell'attributo data del tag
+    var data = $(this).data('indice');
+    console.log(data);
+    //rimuovo il pallino celeste dalla slide precedente
+    $('.pallini i').removeClass('active');
+    $(this).addClass('active'); //metto il pallino a qullo attuale
+    $('.slider img').removeClass('active');
+    $('.slider img').eq(data).addClass('active');//seleziono l'img in base all'indice passato dal pallino e gli atrribiusco la classe 
   };
 
 });
