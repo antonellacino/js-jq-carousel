@@ -27,4 +27,8 @@
   position:absolute;
   bottom: 20px;
   left: 49%;
+  color: #1552ec;
+}
+.pallini .active{
+  color: #36e5ed;
 }
